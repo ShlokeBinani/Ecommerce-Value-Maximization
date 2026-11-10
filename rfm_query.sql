@@ -1,4 +1,3 @@
-
 WITH
     -- Find the snapshot date, which is one day after the last transaction in the whole dataset
     snapshot AS (
@@ -27,4 +26,3 @@ SELECT
     m.MonetaryValue
 FROM
     rfm_metrics m, snapshot s;
-"""
